@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --color: rgb(13, 65, 78);
+    --dark-color: rgb(11, 57, 68);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 30px 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+.container {
+    background-color: white;
+    margin: 50px auto;
+    max-width: 640px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 1px 1px rgba(0, 0, 0, 0.134);
+}
+
+form input, form label, form button {
+    font-size:1.3em;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form button {
+    border: none;
+    height: 40px;
+    background-color: var(--color);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: var(--dark-color);
+}
+
+form input:focus {
+    outline: 1px solid var(--color);
+}
+
+.lista1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 50%;
+}
+
+.lista2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 49%;
+}
+
+.verdadeiro {
+    background-color: rgb(35, 224, 89);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.falso {
+    background-color: rgb(196, 65, 65);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.input-cpf {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    width: 50%;
+    height: 40px;
+    font-size: 16px;
+}
+
+.input-button {
+    background-color: #eeeeee;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border-width: 0.3px;
+}
+
+.input-button:active {
+    background-color: #d1d1d1;
+}
+
+.alert-message {
+    color: rgb(174, 0, 0);
+    font-size: 12px;
+    display: none;
+}
+
+.cpf-valid, .cpf-invalid {
+    margin-top: 30px;
+    text-indent: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cpf-valid {
+    color: #022f02;
+    background-color: rgb(186, 232, 186);
+}
+
+.cpf-invalid {
+    color: #500a0a;
+    background-color: rgb(241, 201, 201);
+}
